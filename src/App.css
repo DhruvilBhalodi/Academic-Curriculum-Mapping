@@ -1,0 +1,190 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes colorchange
+{
+    0%{background-color: transparent;}
+    100%{background-color: white;}
+    0%{color: white;}
+    100%{color: black;}
+}
+.button {
+    border-radius: 4px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    padding : 5px;
+    align-content: left;
+    color:white;
+}
+.button:hover{
+    animation: colorchange 0.5s forwards;
+}
+@keyframes page-appear {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page-appear {
+  animation: page-appear 3s forwards;
+}
+.button2 {
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    padding:10px;
+    color:white
+}
+.data-table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 90%;
+  text-align: center;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+}
+@keyframes colorchange2
+{
+    0%{background-color: transparent;}
+    100%{background-color: #7b8cff;}
+}
+.button3 {
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    padding : 5px;
+}
+.button3:hover{
+    animation: colorchange2 0.5s forwards;
+}
+ .profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-btn {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 10px 15px ;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: white;
+  border-radius: 8px;
+  width: 120px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.dropdown.show {
+  max-height: 200px; /* expands smoothly */
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+@keyframes colorchange3
+{
+    0%{background-color: transparent;}
+    100%{background-color: #54C6FF;}
+    0%{color: grey;}
+    100%{color: white;}
+}
+.button4 {
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    padding : 5px;
+    align-content: left;
+    color:grey;
+    border-color: transparent;
+}
+.button4:hover{
+    animation: colorchange3 1.5s forwards;
+}
+@keyframes colorchange4
+{
+    0%{background-color: rgba(0,0,0,0.4);}
+    100%{background-color: #54C6FF;}
+    0%{color: black;}
+    100%{color: white;}
+}
+.button5 {
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.4);
+    cursor: pointer;
+    font-size: 15px;
+    padding : 5px;
+    align-content: left;
+    color:black;
+    border-color: transparent;
+}
+.button5:hover {
+  animation: colorchange4 1s forwards;
+}
