@@ -65,8 +65,8 @@ function App() {
                       </button>
                     
                       <div className={`dropdown ${open ? "show" : ""}`} style={{zIndex:'100' , backgroundColor:'rgba(0,0,0,0.4)'}}>
-                        {/* <Link to='/'><button className='button' onClick={()=>{setProfileData(!true);setOpen(!open);}} style={{width:'100%' , height: '100%'}}>Home</button></Link> */}
-                        {/* <Link to='/Profile'><button className='button' onClick={()=>{setProfileData(true);setOpen(!open);}} style={{width:'100%' , height: '100%'}}>View Profile</button></Link> */}
+                        <Link to='/'><button className='button' onClick={()=>{setProfileData(!true);setOpen(!open);}} style={{width:'100%' , height: '100%'}}>Home</button></Link> 
+                        <Link to='/Profile'><button className='button' onClick={()=>{setProfileData(true);setOpen(!open);}} style={{width:'100%' , height: '100%'}}>View Profile</button></Link> 
                         <Link to='/'><button className='button' onClick={()=>{setLoginStatus(false);
                           setEmail("");
                           setPassword("");
